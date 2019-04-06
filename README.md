@@ -6,7 +6,7 @@
 
 
 The disadvantages of this Pattern :
-  - It needs to create many programming lines.
-  - This pattern is not LifeCycle Aware so any error in its application causes Memory Leaks.
+  * It needs to create many programming lines.
+  * This pattern is not LifeCycle Aware so any error in its application causes Memory Leaks.
    
 
