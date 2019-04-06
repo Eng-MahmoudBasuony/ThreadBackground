@@ -6,6 +6,7 @@
 
 Use it
    * Run code based on message sent from MainThread to Custom Thread
+   * Also there CallBack for Result
    
 The disadvantages of this Pattern :
   * It needs to create many programming lines.
