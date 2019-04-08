@@ -15,7 +15,7 @@ public class ActivityLHT extends AppCompatActivity implements Handler.Callback
 {
 
     private Button btn1;
-    private static final String TAG = "Main2Activity";
+    private static final String TAG = "ActivityLHT";
 
     private MyFirstThread mMyFirstThread; //this Custom Thread
     private Handler mMainThreadHandler = null; //For Callback

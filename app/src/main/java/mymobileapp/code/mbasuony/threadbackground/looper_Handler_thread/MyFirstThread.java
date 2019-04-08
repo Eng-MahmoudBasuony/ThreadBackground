@@ -32,6 +32,7 @@ public class MyFirstThread extends Thread
             Looper.prepare(); //Initialized or prepare for Looper
             mCustomHandler=new CustomHandler(Looper.myLooper()); // return the looper for this thread
             Looper.loop(); //start looping our loop
+
         }
 
 
@@ -54,7 +55,7 @@ public class MyFirstThread extends Thread
             }
             catch (NullPointerException e)
             {
-                Log.d("TAG1", "sendMessageToFirstThread: " + e.getMessage());
+                Log.d("myFirstThread", "sendMessageToFirstThread: " + e.getMessage());
 
                 try    // Sometime threads has delay to start immediately,
                 {     // therefore we should try to catch that null error.
@@ -80,7 +81,7 @@ public class MyFirstThread extends Thread
                 break;
             } catch (NullPointerException e)
             {
-                Log.d("TAG2", "sendMessageToFirstThread: " + e.getMessage());
+                Log.d("myFirstThread", "Catch sendMessageToFirstThread: " + e.getMessage());
                 try
                 {
                     Thread.sleep(100);
@@ -121,7 +122,7 @@ public CustomHandler(Looper looper)
     {
         if (msg.what == Constant.MULTIPLICATION_TASK)
         {
-            Log.d("TAG", "handleMessage: Calculating... 10 * 90 from thread: " + Thread.currentThread().getName());
+            Log.d("myFirstThread", "handleMessage: Calculating... 10 * 90 from thread: " + Thread.currentThread().getName());
 
             // Task
             int x = 10;
