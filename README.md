@@ -40,5 +40,28 @@
     otherwise onResume() after onStart() is good place.
     Retrieving Result:
     9. In handleMessage() retrieve your message from the custom thread and extract the result from it.
+    
+    ----------------------
+   ### HandlerThreads Patter
+   > Package name "HandlerThreadPattern" Dedicated for--> Runnable , Handler Pattern (ActivityHandlerPattern.java,    MyFirstRunnable.java). 
+   
+ * Steps Creation for ActivityHandlerPattern.java:
+ 
+    1. Implement Handler.Callback.
+    2. Override handleMessage().
+    3. Create an instance field for HandlerThread.
+    4. Create an instance field for a Handler to this main thread.
+    5. Override method onStart() and init the HandlerThread and the MainThreadHandler.
+    6. Override method onStop() and stop the HandlerThread.
+    7. Create a handler for the background thread, with the help of HandlerThread.
+    8. Post (send) your custom runnable into it.
+   
+   
+* Steps Creation for MyFirstRunnable.java:
+  
+   1. Implement Runnable interface.
+   2. Override run().
+   3. Create field for main handler, using weak reference to avoid memory leaks.
+   4. Do your work on run() then wrap result into the main thread handler, to send it to main thread.
   
     
