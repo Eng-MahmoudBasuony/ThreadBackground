@@ -42,7 +42,7 @@
     9. In handleMessage() retrieve your message from the custom thread and extract the result from it.
     
     ----------------------
-   ### HandlerThreads Patter
+   ### Handler Thread Pattern
    > Package name "HandlerThreadPattern" Dedicated for--> Runnable , Handler Pattern (ActivityHandlerPattern.java,    MyFirstRunnable.java). 
    
  * Steps Creation for ActivityHandlerPattern.java:
