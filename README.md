@@ -19,7 +19,7 @@
     1. Create a handler field for Main Thread.
     2. Init it in the constructor.
     3. Create a custom handler inner class for this thread.
-    4. Override handleMessage in the custom handler class, and put your work there.
+    4. Override handleMessage in the custom handler class, and put your work there"heavy code".
     5. Create a field for the custom handler.
     Running the Looper
     6. Override run() to prepare the Looper for this thread.
